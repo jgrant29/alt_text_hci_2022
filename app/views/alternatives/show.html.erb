@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @alternative %>
+
+<div>
+<% if user_signed_in? %>
+  <%= link_to "Edit this alternative", edit_alternative_path(@alternative) %> |
+  |
+    <%= button_to "Destroy this alternative", @alternative, method: :delete %>
+  <%= link_to "Back to alternatives", alternatives_path %>
+<% end %>
+
+
+</div>

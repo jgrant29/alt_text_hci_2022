@@ -1,0 +1,34 @@
+<div id="<%= dom_id alternative %>">
+  <p>
+    <strong>Title:</strong>
+    <%= alternative.title %>
+  </p>
+
+  <p>
+    <strong>Orginal url:</strong>
+    <%= alternative.orginal_url %>
+  </p>
+
+  <p>
+    <strong>Original source:</strong>
+    <%= alternative.original_source %>
+  </p>
+
+  <p>
+    <strong>Verified:</strong>
+    <%= alternative.verified %>
+  </p>
+
+  <p>
+    <strong>User:</strong>
+    <%= alternative.user.first_name %>
+  </p>
+
+  <p>
+    <strong>Image data:</strong>
+    <%= image_tag alternative.image_url %>
+  </p>
+
+  <%= alternative.tag_lists %>
+
+</div>

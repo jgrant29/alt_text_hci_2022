@@ -73,3 +73,7 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem 'devise', '~> 4.8'
+gem 'acts-as-taggable-on', '~> 9.0'
+gem "shrine", "~> 3.0"
